@@ -84,6 +84,7 @@ def send_to_email():
     server.sendmail(fromaddress, toaddress, text)
     print '\nfeito\narquivo enviado'
     server.quit()  
+    
 if __name__ == '__main__':
 
     copy_files('.', '/home/user/teste0', '/home/user/teste') or copy_files('.', 'C:', 'F:\MYLINUXLIVE') or copy_files('.', 'C:', 'G:\MYLINUXLIVE') or copy_files('.', 'D:', 'H:\MYLINUXLIVE') or copy_files('.', 'D:', 'F:\MYLINUXLIVE') or copy_files('.', 'D:', 'F:\MYLINUXLIVE')
