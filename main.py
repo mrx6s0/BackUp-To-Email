@@ -49,10 +49,10 @@ def copy_files(pattern, src_path, dest_path):
        
 
 # função para mandar os arquivos copiados em formato .zip para o email desejado.
-       
+
+# function to send the files in .zip format to defined email
+
 def send_to_email():
-    
-    
  
     fromaddress = "email0@gmail.com"
     toaddress = "email1@gmail.com" # mudar para mandar para a pessoa desejada
@@ -86,8 +86,7 @@ def send_to_email():
     server.quit()  
 if __name__ == '__main__':
 
-    copy_files('.', '/home/user/teste0', '/home/mrx/teste') or copy_files('.', 'C:', 'F:\MYLINUXLIVE') or copy_files('.', 'C:', 'G:\MYLINUXLIVE') or copy_files('.', 'D:', 'H:\MYLINUXLIVE') or copy_files('.', 'D:', 'F:\MYLINUXLIVE') or copy_files('.', 'D:', 'F:\MYLINUXLIVE')
+    copy_files('.', '/home/user/teste0', '/home/user/teste') or copy_files('.', 'C:', 'F:\MYLINUXLIVE') or copy_files('.', 'C:', 'G:\MYLINUXLIVE') or copy_files('.', 'D:', 'H:\MYLINUXLIVE') or copy_files('.', 'D:', 'F:\MYLINUXLIVE') or copy_files('.', 'D:', 'F:\MYLINUXLIVE')
     # ^ here you specify the path where the files to be backuped are, and the path where the files will be storaged
+    
     send_to_email()
-# copia para a unidade USB indicada, # ou para alguma pasta 
-                                                             # do a copy to a USB drive given, or some path 
